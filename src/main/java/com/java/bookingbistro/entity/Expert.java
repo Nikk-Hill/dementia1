@@ -1,32 +1,26 @@
 package com.java.bookingbistro.entity;
 
+import com.java.bookingbistro.model.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Entity
-@Table(name = "RESTAURANT")
+@Table(name = "EXPERT")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Restaurant {
+public class Expert {
 
     @Id
-    @Column(name = "RESTAURANT_ID")
+    @Column(name = "EXPERT_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer restaurantId;
+    private Integer expertId;
 
-    @Column(name = "RESTAURANT_NAME")
-    private String restaurantName;
-
-    @Column(name = "REGISTRATION_DATE")
-    private LocalDate registrationDate;
-
-    @Column(name = "CUISINES")
-    private String cuisines;
+    @Column(name = "EXPERT_NAME")
+    private String expertName;
 
     @Column(name = "LOCATION")
     private String location;
@@ -45,4 +39,7 @@ public class Restaurant {
 
     @Column(name = "CAPACITY_PER_TIME_SLOT")
     private int capacityPerTimeSlot;
+
+    @Column(name = "ROLE")
+    private Role role;
 }

@@ -10,11 +10,9 @@ import java.time.LocalDate;
 @Builder
 public class UserBookingsDTO {
     private Integer bookingId;
-    private String restaurantName;
+    private String expertName;
     private LocalDate creationDate;
     private LocalDate bookingDate;
-    private int numberOfPeople;
-    private BookingStatus bookingStatus;
     private String timeSlot;
     private long daysRemainingTillBooking;
 }

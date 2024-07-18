@@ -25,20 +25,14 @@ public class UserBookings {
     @Column(name = "USER_ID")
     private Integer userId;
 
-    @Column(name = "RESTAURANT_ID")
-    private Integer restaurantId;
+    @Column(name = "EXPERT_ID")
+    private Integer expertId;
 
     @Column(name = "CREATION_DATE")
     private LocalDate creationDate;
 
     @Column(name = "BOOKING_DATE")
     private LocalDate bookingDate;
-
-    @Column(name = "NUMBER_OF_PEOPLE")
-    private int numberOfPeople;
-
-    @Column(name = "BOOKING_STATUS")
-    private BookingStatus bookingStatus;
 
     @Column(name = "TIME_SLOT")
     private String timeSlot;

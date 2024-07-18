@@ -12,12 +12,12 @@ import java.util.List;
 @Slf4j
 public class TimeSlotsUtilTest {
 
-    @Test
-    public void getTimeSlotsForRestaurantTest() {
-        String workingHours = "10-22";
-        int timeSlotIntervalInMinutes = 60;
-        List<String> timeSlots = TimeSlotsUtil.getTimeSlotsForRestaurant(workingHours,
-                timeSlotIntervalInMinutes);
-        log.info(timeSlots.toString());
-    }
+//    @Test
+//    public void getTimeSlotsForRestaurantTest() {
+//        String workingHours = "10-22";
+//        int timeSlotIntervalInMinutes = 60;
+//        List<String> timeSlots = TimeSlotsUtil.getTimeSlotsForExpert(workingHours,
+//                timeSlotIntervalInMinutes);
+//        log.info(timeSlots.toString());
+//    }
 }

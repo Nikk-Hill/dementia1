@@ -15,5 +15,4 @@ public class SignInResponse {
     private String userName;
     private String userEmailId;
     private String jwtToken;
-    private Role role;
 }

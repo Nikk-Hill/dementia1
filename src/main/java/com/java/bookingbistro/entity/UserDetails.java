@@ -32,7 +32,4 @@ public class UserDetails {
 
     @Column(name = "PHONE_NUMBER")
     private String phoneNumber;
-
-    @Column(name = "ROLE")
-    private Role role;
 }

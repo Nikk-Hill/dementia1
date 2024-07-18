@@ -11,5 +11,4 @@ public class UserDetailsDTO {
     private String emailId;
     private String password;
     private String phoneNumber;
-    private Role role;
 }

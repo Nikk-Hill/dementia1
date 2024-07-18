@@ -42,7 +42,6 @@ public class SignUpService {
                 .emailId(userDetailsDTO.getEmailId())
                 .password(userDetailsDTO.getPassword())
                 .phoneNumber(userDetailsDTO.getPhoneNumber())
-                .role(userDetailsDTO.getRole())
                 .build();
         userDetailsRepository.save(userDetails);
     }

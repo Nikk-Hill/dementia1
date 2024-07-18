@@ -33,7 +33,6 @@ public class SignInService {
                     .userName(userDetails.getUserName())
                     .userEmailId(userEmailId)
                     .jwtToken(jwtToken)
-                    .role(userDetails.getRole())
                     .build();
         } else {
             log.error("User Details not found!");
